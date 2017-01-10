@@ -1,0 +1,20 @@
+{
+  "root": true,    //Declaring this as the default eslint file. Project root so don't look elsewhere
+  "extends": [
+    "eslint:recommended",   //Use the recommended rules. Can use more as discussed in earlier slide. Air bnb etc.
+    "plugin:import/errors", //Additional checks. Enhanced checking for invalid import statements.
+    "plugin:import/warnings"
+  ],
+  "parserOptions": { //Version of js I'm using.
+    "ecmaVersion": 7,
+    "sourceType": "module"
+  },
+  "env": { //Environemnt section. Expecting to work with a browser. Node is expected and using mocha. Others can be used here.
+    "browser": true,
+    "node": true,
+    "mocha": true
+  },
+  "rules": { //Define any rules we want to overide.
+    "no-console": 1 //Setting no console to a warning. 0 is off. 1 is warning. 2 is Error.
+  }
+}
