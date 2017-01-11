@@ -1,5 +1,5 @@
 export default function getBaseUrl() { //Get parameter by name looking for mock API. If exists, go to local host. Otherwise, go to /
- return getQueryStringParameterByName('useMockApi') ? 'http://localhost:3001/' : '/';
+ return getQueryStringParameterByName('useMockApi') ? 'http://localhost:3001/' : 'https://lit-wildwood-93122.herokuapp.com/';
 }
 
 
